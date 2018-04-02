@@ -1,0 +1,39 @@
+<!-- <div class="area" *ngFor="let row of area">
+  <cell *ngFor="let col of area"
+    [state]="squares[col+row*30]"
+    (click)="start(col+row*30)"></cell>
+</div> -->
+<!-- <div>
+  <svg viewBox="0 0 30 30">
+    <rect [attr.x.]="coordinates[0]" [attr.y.]="coordinates[1]" 
+    width="1" height="1" 
+    style="fill:rgb(0,0,255)" />
+  </svg>
+</div> -->
+
+<div class="text svg">
+    <svg viewBox="0 0 30 30">
+      <text [attr.x.]="coordinates[0]" [attr.y.]="coordinates[1]" 
+      width="1" height="1" 
+      fill="red"> {{ player }} </text>
+      <!-- <svg [attr.x.]="coordinates[0]" [attr.y.]="coordinates[1]"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="2px" height="2px" viewBox="0 0 10 10"  
+      transform="rotate(180)">
+        <ellipse fill="#282828" cx="5" cy="2.266" rx="1.984" ry="1.516"/>
+        <ellipse fill="#DD0000" cx="5" cy="5.828" rx="3.391" ry="3.563"/>
+        <circle fill="#282828" cx="2.797" cy="4.75" r="0.563"/>
+        <circle fill="#282828" cx="3.672" cy="7.766" r="0.531"/>
+        <circle fill="#282828" cx="4.844" cy="6.531" r="0.438"/>
+        <circle fill="#282828" cx="5.141" cy="3.484" r="0.703"/>
+        <circle fill="#282828" cx="6.984" cy="5.703" r="0.578"/>
+        <circle fill="#282828" cx="6.031" cy="7.984" r="0.594"/>
+      </svg> -->
+    </svg>
+</div>
+
+<div class="controls">
+  <button (click)="at(15,15)">Start at center</button>
+  <button (click)="turnLeft()">Left</button>
+  <button (click)="turnRight()">Right</button>
+  <button (click)="advance()">Advance</button>
+</div>

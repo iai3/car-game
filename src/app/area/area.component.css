@@ -1,0 +1,19 @@
+.area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #C5C1C0;
+    color: #fff;
+  }
+
+  .text {
+      font-size: 2px;
+  }
+
+  svg {
+      border: 1px solid black;
+      margin-top: 20px;
+      width: 600px;
+      height: 600px;
+  }
